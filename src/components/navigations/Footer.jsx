@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function Footer({ transparent }) {
   return (
-    <footer class="main-font mt-[50px] bg-black/20">
+    <footer class="main-font mt-[50px] bg-main">
       <div class="w-full p-4 py-8">
         <div class="flex items-center justify-between md:container md:mb-8">
           <div class="mb-6 md:mb-0">

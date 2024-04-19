@@ -11,8 +11,9 @@ export default {
         title: ["Nunito Sans", "sans-serif"],
       },
       colors: {
-        primary: "#FF4242",
-        textcolor: "#2D2D2D",
+        primary: "#FFB03E",
+        secondary: "#F67356",
+        main: "#2D2D2D",
       },
     },
   },
