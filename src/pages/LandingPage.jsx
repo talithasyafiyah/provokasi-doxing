@@ -10,9 +10,12 @@ function LandingPage() {
     e.preventDefault(); // mencegah reload halaman
     setLoading(true);
     try {
-      const response = await axios.post("http://194.163.40.96/identification", {
-        text: sentence,
-      });
+      const response = await axios.post(
+        "https://dox-provocation-detection.my.id/identification/",
+        {
+          text: sentence,
+        }
+      );
       setResult(response.data);
     } catch (error) {
       console.error("Error:", error);
@@ -91,7 +94,7 @@ function LandingPage() {
                         className="font-bold italic text-red-700 hover:text-red-600"
                       >
                         {" "}
-                        {result.classification}
+                        Provokasi Doxing
                       </a>
                     </p>
                   </div>
